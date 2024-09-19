@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens</title>
+    <link rel="stylesheet" href="style-pagina-de-galeria.css">
+</head>
+<body>
+
+<header>
+    <h1>Galeria de Imagens</h1>
+</header>
+
+<div class="gallery-container">
+    <div class="gallery-item">
+        <img src="imagem1.jpg" alt="Imagem 1" onclick="openLightbox(this)">
+        <p>Descrição da Imagem 1</p>
+    </div>
+    <div class="gallery-item">
+        <img src="imagem2.jpg" alt="Imagem 2" onclick="openLightbox(this)">
+        <p>Descrição da Imagem 2</p>
+    </div>
+    <div class="gallery-item">
+        <img src="imagem3.jpg" alt="Imagem 3" onclick="openLightbox(this)">
+        <p>Descrição da Imagem 3</p>
+    </div>
+    <div class="gallery-item">
+        <img src="imagem4.jpg" alt="Imagem 4" onclick="openLightbox(this)">
+        <p>Descrição da Imagem 4</p>
+    </div>
+    <div class="gallery-item">
+        <img src="imagem5.jpg" alt="Imagem 5" onclick="openLightbox(this)">
+        <p>Descrição da Imagem 5</p>
+    </div>
+    <div class="gallery-item">
+        <img src="imagem6.jpg" alt="Imagem 6" onclick="openLightbox(this)">
+        <p>Descrição da Imagem 6</p>
+    </div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-image">
+</div>
+
+<script src="script-pagina-de-galeria.js"></script>
+
+</body>
+</html>
