@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Titulo criado</h1>
+
+    <header>
+        <h1>Nossos Serviços</h1>
+    </header>
+    
+    <header>
+        <h1>Nossos Serviços</h1>
+    </header>
+    
+    <div class="container">
+        <button onclick="mostrarMensagem()">Clique para ver uma mensagem</button>
+        <p id="mensagem"></p>
+    
+        <div class="service">
+            <h2>Desenvolvimento Web</h2>
+            <button onclick="toggleDescricao('descricao1')">Mostrar/Esconder descrição</button>
+            <p id="descricao1" style="display: none;">Oferecemos serviços de desenvolvimento de websites personalizados, otimizados para desempenho e SEO, usando as mais modernas tecnologias do mercado.</p>
+        </div>
+    
+        <div class="service">
+            <h2>Design Gráfico</h2>
+            <button onclick="toggleDescricao('descricao2')">Mostrar/Esconder descrição</button>
+            <p id="descricao2" style="display: none;">Nossos designers criam layouts únicos e profissionais para a sua empresa, cuidando de toda a identidade visual e branding.</p>
+        </div>
+    
+        <div class="service">
+            <h2>Consultoria de TI</h2>
+            <button onclick="toggleDescricao('descricao3')">Mostrar/Esconder descrição</button>
+            <p id="descricao3" style="display: none;">Prestamos consultoria especializada em infraestrutura de TI, ajudando sua empresa a alcançar um desempenho máximo com as melhores soluções tecnológicas.</p>
+        </div>
+    
+        <div class="service">
+            <h2>Marketing Digital</h2>
+            <button onclick="toggleDescricao('descricao4')">Mostrar/Esconder descrição</button>
+            <p id="descricao4" style="display: none;">Oferecemos campanhas de marketing digital, incluindo SEO, SEM e gerenciamento de mídias sociais, para aumentar sua presença online.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
